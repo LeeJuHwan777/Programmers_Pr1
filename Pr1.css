@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =======================header시작================================ */
+
+.top {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.header {
+    color: #EE6352;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.header-first button,
+.header-second button {
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+.header-first {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0.75rem;
+}
+
+.header-second {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0.75rem;
+}
+
+.header-first>button img,
+.header-second>button img {
+    margin-bottom: 3px;
+    border-radius: 2.5rem;
+    background-color: #EFE9F4;
+    padding: 2rem;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* hover 모르는 부분 */
+
+.header-first>button:hover img,
+.header-second>button:hover img {
+    cursor: pointer;
+    background-color: #EE6352;
+}
+
+.header-first>button:hover p,
+.header-second>button:hover p {
+    cursor: pointer;
+    color: #EE6352;
+}
+
+/* hover 모르는 부분 */
+
+.header-first p,
+.header-second p {
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* ======================header 끝======================================== */
+
+
+/* ======================main시작======================================== */
+
+main {
+    max-width: 1600px;
+    width: calc(100% - 1rem);
+    margin: auto;
+}
+
+.search {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+    width: 45%;
+    padding: 0.2rem;
+    font-weight: 700;
+    position: absolute;
+}
+
+.main-search {
+    margin: 1rem 0;
+    /* border: 1px solid blue; */
+    padding: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    z-index: 999;
+    margin-right: auto;
+}
+
+.search:focus {
+    background-color: #EFE9F4;
+}
+
+.search-icon {
+    position: absolute;
+    right: 28%;
+    cursor: pointer;
+}
+
+
+.listCon {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+    /* border: 1px solid red; */
+    list-style: none;
+    overflow: hidden;
+    padding: 0.25rem;
+    gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.listCon>li {
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.listCon .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.listCon {
+    position: relative;
+}
+
+.listCon .more {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* background-color: lightgoldenrodyellow; */
+    color: transparent;
+}
+
+.listCon-more {
+    display: flex;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 510px;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.place {
+    color: #eaeaea;
+    font-size: 0.7em;
+}
+
+.main-first {
+    width: 100%;
+    height: 700px; /* 원하는 이미지 높이로 설정 */
+    overflow: hidden; /* 이미지가 부모 크기를 벗어나지 않도록 처리 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-first img {
+    display: block;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+.main-second {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.main-second>* {
+    cursor: pointer;
+}
+
+.main-second>button:hover {
+    color: blue;
+}
+
+.main-second button {
+    border: none;
+    background-color: white;
+    font-size: 1.5em;
+
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.page-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.prevGroup img {
+    display: block;
+    margin: auto;
+}
+
+.page-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.nextGroup img {
+    display: block;
+    margin: auto;
+}
